@@ -1,0 +1,41 @@
+@import './variable';
+
+.form-container {
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  padding: 3rem;
+  margin: 2rem;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  label.required {
+    &:after {
+      content: '*';
+      color: red;
+      margin: 0.4rem;
+    }
+  }
+
+  .indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bullet-indicator {
+      width: 8px;
+      height: 8px;
+      margin: 8px;
+      border-radius: 100%;
+      border: 1px $primary solid;
+      background-color: transparent;
+
+      &.active {
+        background-color: $primary;
+      }
+    }
+  }
+
+}

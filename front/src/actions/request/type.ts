@@ -1,0 +1,5 @@
+export const FETCH_REQUESTS = 'FETCH_REQUESTS';
+export const GET_REQUESTS = 'GET_REQUESTS';
+export const GET_REQUESTS_ERROR = 'GET_REQUESTS_ERROR';
+export const POST_REQUEST = 'POST_REQUEST';
+export const SET_IS_LOADING = 'SET_IS_LOADING';

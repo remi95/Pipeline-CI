@@ -1,0 +1,12 @@
+@import '../../assets/scss/variable';
+
+.carousel-item {
+  height: 500px;
+  max-height: 500px;
+  background-color: #e2e2e2;
+  text-align: center;
+
+  img {
+    height: 500px;
+  }
+}

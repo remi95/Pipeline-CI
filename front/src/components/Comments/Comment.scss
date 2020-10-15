@@ -1,0 +1,24 @@
+.comments {
+  textarea {
+    width: 100%;
+  }
+}
+
+.comment {
+  padding: 1.5rem 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid lightgrey;
+  }
+
+  img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin: 1rem;
+  }
+
+  &-content {
+    margin-left: calc(35px + 2rem);
+  }
+}

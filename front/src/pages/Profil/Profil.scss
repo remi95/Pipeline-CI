@@ -1,0 +1,35 @@
+.profil-page {
+  .profil-form {
+    background-color: #f7f7f7;
+
+    form {
+      .react-datepicker-wrapper {
+        width: 100%;
+      }
+      label {
+        color: #747474;
+      }
+      .form-control {
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid lightgrey;
+  
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
+
+    .right-col {
+      position: relative;
+
+      button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}

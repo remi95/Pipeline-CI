@@ -1,0 +1,33 @@
+.history {
+  background-color: #f7f7f7;
+
+  table {
+    color: #747474;
+
+     thead th {
+      border: 0;
+    }
+     th,  td {
+      border-right: 1px solid #747474;
+      border-top: 0;
+
+      &:last-child, &:nth-child(4) {
+        border-right: 0;
+      }
+    }
+    tbody tr:nth-of-type(odd) {
+      background-color: white;
+    }
+    .participant-btn {
+      position: relative;
+      width: 15rem;
+
+      .badge {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        min-width: 20px;
+      }
+    }
+  }
+}

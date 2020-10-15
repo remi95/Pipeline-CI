@@ -1,0 +1,38 @@
+.card-service {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  height: 100%;
+  &:hover .bg-img {
+    opacity: .6;
+  }
+
+  .bg-img {
+    height: 12rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity .15s ease-in-out;
+  }
+
+  .card-body {
+    position: relative;
+
+    .card-title {
+      max-width: 10rem;
+    }
+    .card-text {
+      span {
+        display: block;
+      }
+    }
+    img.rounded {
+      position: absolute;
+      border-radius: 100% !important;
+      height: 2.5rem;
+      width: 2.5rem;
+      right: 1.25rem;
+      top: 1.25rem;
+    }
+  }
+}

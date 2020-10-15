@@ -1,0 +1,18 @@
+@import '../../assets//scss/variable.scss';
+
+.request-card {
+  .card-header {
+    position: relative;
+    cursor: pointer;
+
+    .icons {
+      position: absolute;
+      top: 0;
+      right: .75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.75rem;
+      color: $primary;
+    }
+  }
+}

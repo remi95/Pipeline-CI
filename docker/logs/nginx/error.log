@@ -1,0 +1,8 @@
+2020/04/09 08:13:07 [error] 8#8: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost"
+2020/04/09 08:13:07 [error] 8#8: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /robots.txt?1586419987727 HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost"
+2020/04/09 08:13:16 [error] 8#8: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /public HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost"
+2020/04/09 08:13:16 [error] 8#8: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /robots.txt?1586419996323 HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost"
+2020/04/09 08:22:49 [error] 8#8: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost"
+2020/04/09 08:22:49 [error] 8#8: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /robots.txt?1586420569055 HTTP/1.1", upstream: "fastcgi://172.20.0.3:9000", host: "localhost"
+2020/04/11 11:38:38 [emerg] 6#6: "daemon" directive is duplicate in /etc/nginx/nginx.conf:3
+2020/04/11 11:57:41 [emerg] 6#6: "daemon" directive is duplicate in /etc/nginx/nginx.conf:3

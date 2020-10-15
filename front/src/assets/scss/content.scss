@@ -1,0 +1,13 @@
+@import '../../assets/scss/variable';
+
+.border-box {
+  border: 1px solid $primary;
+  border-radius: 5px;
+  margin: 4rem auto;
+  padding: 3rem;
+
+  &.primary { border-color: $primary; }
+  &.secondary { border-color: $secondary; }
+}
+
+

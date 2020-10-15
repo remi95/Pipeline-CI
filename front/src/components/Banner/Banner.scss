@@ -1,0 +1,29 @@
+@import '../../assets/scss/variable.scss';
+
+.banner {
+  margin-top: .5rem;
+  margin-bottom: 1.5rem;
+
+  .banner-left.col {
+    padding: 3rem 0 3rem 4rem;
+
+    h1 {
+      margin: 0;
+      max-width: 30rem;
+    }
+
+    a.btn {
+      margin: 1rem 0;
+    }
+  }
+
+  .banner-right.col {
+    .bg-img {
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center right;
+    }
+  }
+}

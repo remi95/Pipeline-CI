@@ -1,0 +1,21 @@
+@import '../../assets/scss/variable.scss';
+
+ul.concerto-nav.nav {
+  border-top: solid 1px #c4c4c4;
+  border-bottom: solid 1px #c4c4c4;
+
+  li {
+    a {
+      color: $greyText;
+      font-size: 1.2rem;
+      transition: color .15s ease-in-out;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+    a.is-active {
+      color: $secondary;
+    }
+  }
+}

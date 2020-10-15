@@ -1,0 +1,73 @@
+@import '../../assets//scss/variable.scss';
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Montserrat&display=swap');
+
+.concerto-navbar.navbar {
+  padding: 0.5rem 0;
+
+  .navbar-brand {
+    span {
+      font-family: 'Baloo Chettan 2', cursive;
+      font-size: 1.5rem;
+    }
+    img {
+      width: auto;
+      height: auto;
+      max-width: 3.5rem;
+    }
+  }
+
+  .navbar-collapse {
+    ul.mr-auto.navbar-nav {
+
+      .search-form {
+        .form-group {
+          position: relative;
+
+          svg {
+            position: absolute;
+            top: 50%;
+            left: .5rem;
+            transform: translateY(-50%);
+            color: $lightGrey;
+            pointer-events: none;
+          }
+
+          ::placeholder {
+            color: $lightGrey;
+            opacity: 1;
+          }
+
+          .form-control {
+            border: 0;
+            background-color: #f7f7f7;
+            padding-left: 2rem;
+            min-width: 26rem;
+          }
+        }
+      }
+
+    }
+
+    .dropdown {
+      display: inline-block;
+      margin-left: 1rem;
+
+      button {
+        background-color: transparent;
+        border: 0;
+        color: $primary;
+        &:focus {
+          box-shadow: none;
+      }
+
+        svg {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .service-btn {
+    margin-right: 1rem;
+  }
+}
