@@ -15,4 +15,4 @@ before_install:
 script:
   - cd docker
   - docker-compose up -d
-  - echo "success"
+  - docker-compose exec react bash -c "npm run test"
