@@ -15,4 +15,6 @@ before_install:
 script:
   - cd docker
   - docker-compose up -d
-  - docker-compose exec react bash -c "npm run test"
+  - docker-compose exec react bash -c "npm run test --watchAll=false"
+  - docker-compose exec apache-php bash -c "php bin/console d:s:u --force"
+  - docker-compose exec apache-php bash -c "./vendor/bin/simple-phpunit"
