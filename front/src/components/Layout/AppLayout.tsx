@@ -1,7 +1,7 @@
 import React, { ReactElement, useEffect } from 'react';
 import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-import * as Sentry from '@sentry/browser';
+// import * as Sentry from '@sentry/browser';
 import { SENTRY_ID, SENTRY_TOKEN } from '../../parameters';
 import { checkUser } from '../../actions/userAction';
 import Loader from '../Loader';
@@ -20,7 +20,7 @@ const AppLayout: React.FC<Props> = (props: Props) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    Sentry.init({ dsn: `https://${SENTRY_TOKEN}@sentry.io/${SENTRY_ID}` });
+    // Sentry.init({ dsn: `https://${SENTRY_TOKEN}@sentry.io/${SENTRY_ID}` });
     dispatch(checkUser());
     dispatch(setHasGeoZone(localStorage.getItem(LOCAL_STORAGE_DEPARTMENT) !== null));
   }, []);
