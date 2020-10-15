@@ -18,5 +18,5 @@ before_script:
   - sudo service apache2 restart
 
 script:
-  - composer install --prefer-dist --no-ansi --no-interaction --no-progress
+  - cd api && composer install --prefer-dist --no-ansi --no-interaction --no-progress
   - ./vendor/bin/simple-phpunit
