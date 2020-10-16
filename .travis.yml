@@ -12,9 +12,17 @@ before_install:
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
 
+addons:
+  sonarcloud:
+    organization: 'ynov'
+    token:
+      secure: ${SONAR_TOKEN}
+
 script:
   - cd docker
   - docker-compose up -d
+  - sonar-scanner
   - docker-compose exec react bash -c "npm run test"
   - docker-compose exec apache-php bash -c "php bin/console d:s:u --force"
   - docker-compose exec apache-php bash -c "./vendor/bin/simple-phpunit"
+
