@@ -21,8 +21,8 @@ addons:
 script:
   - sonar-scanner
   - echo '-------------------- REPORTS --------------------------'
-  - ls -lah
-  - cat report-task.txt
+  - ls -alh .scannerwork
+  - cat .scannerwork/report-task.txt
   - echo '-------------------- END REPORTS --------------------------'
   - cd docker
   - docker-compose up -d
