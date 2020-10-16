@@ -22,7 +22,7 @@ script:
   - sonar-scanner
   - echo '-------------------- REPORTS --------------------------'
   - ls -alh .scannerwork
-  - cat .scannerwork/report-task.txt
+  - cat .scannerwork/.sonar_lock
   - echo '-------------------- END REPORTS --------------------------'
   - cd docker
   - docker-compose up -d
