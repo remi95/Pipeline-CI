@@ -20,6 +20,9 @@ addons:
 
 script:
   - sonar-scanner
+  - echo '-------------------- REPORTS --------------------------'
+  - cat report-task.txt
+  - echo '-------------------- END REPORTS --------------------------'
   - cd docker
   - docker-compose up -d
   - docker-compose exec react bash -c "npm run test"
