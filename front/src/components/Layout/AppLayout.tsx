@@ -19,7 +19,7 @@ const AppLayout: React.FC<Props> = (props: Props) => {
   const hasChooseGeoZone = useSelector((state: RootStateOrAny) => state.app.hasChooseGeoZone);
   const dispatch = useDispatch();
 
-  useEffect(() => {
+                          useEffect(() => {
     // Sentry.init({ dsn: `https://${SENTRY_TOKEN}@sentry.io/${SENTRY_ID}` });
     dispatch(checkUser());
     dispatch(setHasGeoZone(localStorage.getItem(LOCAL_STORAGE_DEPARTMENT) !== null));
@@ -31,6 +31,8 @@ const AppLayout: React.FC<Props> = (props: Props) => {
     }
 
     return children;
+
+    console.error('Pas bien !')
   };
 
   return (
