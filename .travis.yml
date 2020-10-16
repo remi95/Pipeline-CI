@@ -19,9 +19,9 @@ addons:
       secure: 'yuvKgB7KFEizaJiNSJu1Vr6DexDLfHJ6Su44n1T4aNN05soq9WjKCMORBnzDBipAbcKUNBzL13CdHGGMfkBlsv79j0SVtqtHt+VIR4+mE+TYtVF7UU+h4VfyyzhcYOyOVn1pnMpWlQkzlrdAaoRsk0wp6pRhY8ZzM2M0DNOLe1kVT60Tyx8ycmF24d3kRBOpNI2/2QiFt3cvlkYCz0OHEJj4ssUb96KYQ2afb/RiWaCfDj4tzgd2q5HU/lHdcrZ6SE/UcOSX8JwdTJxgRt9BZL3tR0dt3RwTf+f4RfTL+P5aIGFZvsMJNMeQVaGYQeKZNvvdppGybKzyVS534pONIma54QN/cudkOR6pm13cdYpr3PVHf8gThnEDfqdNuMnoMb2kSjskEs6s9WcFuS4FkhYVMhjuFJNGn3XPVHHT38nMxvp9CpfambyyDHgkUdhjWp4XKnd+ZHPVBhVUPap9LQJt/YZtlCYPbU8bLfhm1ezRpejeZ8ejjCqJCO5noRyQrHIIO2tDqSpvWipEztDw6VZhPoHaj48f5RBifo3oG3E/E+XtFWM4rsEc08IWwKOISNPRs7q+ZuZKYyjtDFWu1weHYrfZ/bd9G4cinOVAe63u2ziwqRr3Dn24OLrmvHy9bqCXTx2I0/chTrJy3F8LW3UQ7peZEP+0852UzBKMoqg='
 
 script:
+  - sonar-scanner
   - cd docker
   - docker-compose up -d
-  - sonar-scanner
   - docker-compose exec react bash -c "npm run test"
   - docker-compose exec apache-php bash -c "php bin/console d:s:u --force"
   - docker-compose exec apache-php bash -c "./vendor/bin/simple-phpunit"
