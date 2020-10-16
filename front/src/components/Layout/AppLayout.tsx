@@ -31,6 +31,8 @@ const AppLayout: React.FC<Props> = (props: Props) => {
     }
 
     return children;
+
+    console.log('')
   };
 
   return (
