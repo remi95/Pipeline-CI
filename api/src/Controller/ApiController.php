@@ -8,25 +8,24 @@
 
 namespace App\Controller;
 
+use Doctrine\ORM\Mapping\Entity;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Serializer\Normalizer\DateTimeNormalizer;
 use Symfony\Component\Serializer\Normalizer\GetSetMethodNormalizer;
-            use Symfony\Component\Serializer\Serializer;
+use Symfony\Component\Serializer\Serializer;
 
 /**
  * Class ApiController
  * @package App\Controller
  */
-class ApiController extends
-  AbstractController
+class ApiController extends AbstractController
 {
 
     /**
      * @var integer HTTP status code - 200 (OK) by default
      */
-    protected $statusCode = 204;
     protected $statusCode = 200;
 
     /**
