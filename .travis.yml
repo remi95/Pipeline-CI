@@ -16,7 +16,7 @@ addons:
   sonarcloud:
     organization: 'ynov'
     token:
-      secure: 'YGGv7Dyem+AgDsls/956/2CGDCLNaLDQwNtIdr2zGCliPzkJcCInvDffmxTvxZE80ZkTlg8rlFYyZiMLnlmCZJ5B3HEdYbSYiChQUYvQ2+6kgXiT4fZqCdxfDfKCdpDenY2gWjtNN23aHzxyOci9Ifv67IQjr+4Xo2Ky7/qmEWDNhYwJQ5TN2XF99un4ulj2Ou75RagloVKTUuoLq1WNkQc65ITcKTyGdP6TO+lMzBxjyruzVu4TTbeGFZ/UzLrwMgw8iG3Wd9XAHQVTL84cmTZeHfiYPq47krLxkkAQsLcyToyCW2IHEpyzAl1JLaWeTkse20tArW4oQPBvrdL3nwTP766pThg3cXL7XRRue+OzocZVy3bLYsj3cRtCokdbiNzURvfJVLE37/qL+Bua8ImmqRPLL8gImXVM3VSdlSuAKn6or2JnEIRvZgLz0eY+8yteb/UGHDjyIxppnFtSUvR50FwzaGlg+BeJdIOzUh9Xd1VKEfLplJkrwvJOU+pZziQefSu8d3nWDBENR7BDYZ82mXePDrdjuaQuhmGI1o65kVFZmEtVpdLMPRw3DZpVllPHEm8P4WnA63nnDl+TXfblvVGuoI3pOWEQY3VF7IwFQLFrBirlzybD3FEZH/bETNGlky6II518limhfo1z07UC4eQWaPPvZvgD5AIprX4='
+      secure: $SONAR_TOKEN
 
 script:
   - sonar-scanner
@@ -25,4 +25,3 @@ script:
   - docker-compose exec react bash -c "npm run test"
   - docker-compose exec apache-php bash -c "php bin/console d:s:u --force"
   - docker-compose exec apache-php bash -c "./vendor/bin/simple-phpunit"
-
