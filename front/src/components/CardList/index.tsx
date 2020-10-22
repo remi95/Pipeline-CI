@@ -42,9 +42,6 @@ const CardList = (props: CardProps) => {
       {renderList()}
     </Row>
   );
-
-
-  console.log('Jamais je ne serai affiché')
 };
 
 export default CardList;
