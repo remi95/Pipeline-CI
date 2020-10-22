@@ -16,7 +16,7 @@ addons:
   sonarcloud:
     organization: 'ynov'
     token:
-      secure: $SONAR_TOKEN
+      secure: ${SONAR_TOKEN}
 
 script:
   - sonar-scanner
